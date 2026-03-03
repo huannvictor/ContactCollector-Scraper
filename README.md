@@ -23,6 +23,18 @@ Desenvolvi um robô de **RPA (Robotic Process Automation)** em Python para assum
 * **Arquitetura Escalável:** O projeto segue padrões de engenharia de software (*The Blueprint*), com separação clara entre lógica de negócio, utilitários e gestão de dados, além de uma camada de segurança para proteção de credenciais.
 * **Resultados Tangíveis:** O que antes levava horas agora é concluído em minutos, com 100% de precisão e geração automática de um relatório final em Excel.
 
+## 🛠️ Desenvolvimento e Tecnologias
+
+Este projeto foi concebido e arquitetado por mim, utilizando uma abordagem de **Desenvolvimento Orientado a IA**. Para a implementação técnica, utilizei o **Gemini CLI** como parceiro de *pair programming*.
+
+### Por que essa abordagem?
+A escolha de utilizar IA no desenvolvimento reflete minha habilidade em:
+*   **Visão de Produto:** Identificar oportunidades de automação e definir requisitos claros.
+*   **Direcionamento Técnico:** Orquestrar ferramentas complexas como Playwright, Pandas e Regex para resolver problemas reais de negócio.
+*   **Eficiência e Qualidade:** Entregar uma solução com arquitetura profissional (*The Blueprint*), segurança e documentação impecável em tempo recorde.
+
+Embora eu não seja um especialista profundo em todas as sintaxes de cada biblioteca utilizada, possuo o **domínio dos conceitos de engenharia** necessários para guiar a IA na construção de uma ferramenta robusta, escalável e pronta para produção.
+
 ## 🏗️ Estrutura do Projeto (The Blueprint)
 
 ```text
