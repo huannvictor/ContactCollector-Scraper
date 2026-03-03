@@ -5,14 +5,16 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 from dotenv import load_dotenv
 
-from src import utils
-from src import core
+# Carrega variáveis de ambiente antes de importar módulos locais
+load_dotenv()
+
+from src import utils, core
 
 def run():
     # 1. Configurações Iniciais
-    load_dotenv()
     utils.ensure_dirs()
     utils.setup_logging()
+
     
     # 2. Caminhos de Arquivos
     input_file = Path("data/input/codigos.txt")

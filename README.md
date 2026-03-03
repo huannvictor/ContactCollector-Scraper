@@ -34,15 +34,16 @@ info-escolas/
     playwright install chromium
     ```
 
-2. **Configure suas credenciais:**
+2. **Configure suas credenciais e URLs:**
     - Copie o arquivo `.env.example` para um novo arquivo chamado `.env`.
-    - Abra o arquivo `.env` e preencha com seu usuário e senha:
-
+    - Abra o arquivo `.env` e preencha com seus dados:
     ```text
     LUZ_USER=seu_usuario
     LUZ_PASS=sua_senha
+    LUZ_BASE_URL=https://...
+    LUZ_LOGIN_URL=https://...
+    LUZ_SCHOOL_URL_PREFIX=https://...
     ```
-
     *Obs: O arquivo `.env` é ignorado pelo Git por segurança.*
 
 3. Coloque os códigos das escolas em `data/input/codigos.txt`.

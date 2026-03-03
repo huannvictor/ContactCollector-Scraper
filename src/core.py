@@ -1,3 +1,4 @@
+import os
 import re
 import logging
 from typing import List, Optional, Tuple
@@ -5,10 +6,10 @@ from playwright.sync_api import Page, TimeoutError as PlaywrightTimeoutError
 
 from src import utils
 
-# Configurações do site
-BASE_URL = "https://webdivulgacao.luzdosaber.com.br"
-LOGIN_URL = f"{BASE_URL}/Login.aspx?Pagina=Default.aspx"
-SCHOOL_URL_PREFIX = f"{BASE_URL}/Escola.aspx?IDEscola="
+# Configurações carregadas do ambiente
+BASE_URL = os.getenv("LUZ_BASE_URL", "https://webdivulgacao.luzdosaber.com.br")
+LOGIN_URL = os.getenv("LUZ_LOGIN_URL", f"{BASE_URL}/Login.aspx?Pagina=Default.aspx")
+SCHOOL_URL_PREFIX = os.getenv("LUZ_SCHOOL_URL_PREFIX", f"{BASE_URL}/Escola.aspx?IDEscola=")
 
 # Seletores
 SEL_USER = "#ctl00_ContentPlaceHolder1_TextBox1"
