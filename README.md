@@ -2,7 +2,26 @@
 
 Este projeto automatiza a extração de dados de contato das escolas na plataforma **Luz do Saber**.
 
-## Estrutura do Projeto (The Blueprint)
+## 🎯 Desafio
+
+### Problemática
+
+No exercício da minha função como **Assistente Comercial**, identifiquei um gargalo operacional crítico: a necessidade de preencher planilhas de atualização cadastral com contatos (telefones e e-mails) de diretores escolares. 
+
+O sistema legado da empresa não oferecia relatórios exportáveis com esses dados consolidados. O processo exigia que um colaborador acessasse manualmente o perfil de cada escola, localizasse as informações e as transferisse via "copiar e colar" para o Excel. Esse método era:
+*   **Altamente ineficiente:** Consumia horas valiosas de trabalho humano em tarefas repetitivas.
+*   **Propenso a erros:** A fadiga humana aumentava o risco de falhas na digitação ou omissão de dados.
+*   **Inconsistente:** A falta de padronização nos campos de telefone do sistema dificultava a organização posterior.
+
+### Solução
+
+Desenvolvi um robô de **RPA (Robotic Process Automation)** em Python para assumir essa tarefa de ponta a ponta:
+*   **Extração Inteligente:** Utilizando **Playwright**, o script automatiza o fluxo de login e navegação, processando uma lista de IDs fornecida via arquivo texto.
+*   **Sanitização de Dados:** Implementei algoritmos de **Regex** para tratar a variabilidade dos dados (telefones fixos, celulares com 8 ou 9 dígitos, DDDs e e-mails), garantindo que a saída seja sempre padronizada e profissional.
+*   **Arquitetura Escalável:** O projeto segue padrões de engenharia de software (*The Blueprint*), com separação clara entre lógica de negócio, utilitários e gestão de dados, além de uma camada de segurança para proteção de credenciais.
+*   **Resultados Tangíveis:** O que antes levava horas agora é concluído em minutos, com 100% de precisão e geração automática de um relatório final em Excel.
+
+## 🏗️ Estrutura do Projeto (The Blueprint)
 
 ```text
 info-escolas/
