@@ -28,10 +28,12 @@ Desenvolvi um robô de **RPA (Robotic Process Automation)** em Python para assum
 Este projeto foi concebido e arquitetado por mim, utilizando uma abordagem de **Desenvolvimento Orientado a IA**. Para a implementação técnica, utilizei o **Gemini CLI** como parceiro de *pair programming*.
 
 ### Por que essa abordagem?
+
 A escolha de utilizar IA no desenvolvimento reflete minha habilidade em:
-*   **Visão de Produto:** Identificar oportunidades de automação e definir requisitos claros.
-*   **Direcionamento Técnico:** Orquestrar ferramentas complexas como Playwright, Pandas e Regex para resolver problemas reais de negócio.
-*   **Eficiência e Qualidade:** Entregar uma solução com arquitetura profissional (*The Blueprint*), segurança e documentação impecável em tempo recorde.
+
+* **Visão de Produto:** Identificar oportunidades de automação e definir requisitos claros.
+* **Direcionamento Técnico:** Orquestrar ferramentas complexas como Playwright, Pandas e Regex para resolver problemas reais de negócio.
+* **Eficiência e Qualidade:** Entregar uma solução com arquitetura profissional (*The Blueprint*), segurança e documentação impecável em tempo recorde.
 
 Embora eu não seja um especialista profundo em todas as sintaxes de cada biblioteca utilizada, possuo o **domínio dos conceitos de engenharia** necessários para guiar a IA na construção de uma ferramenta robusta, escalável e pronta para produção.
 
@@ -39,23 +41,26 @@ Embora eu não seja um especialista profundo em todas as sintaxes de cada biblio
 
 ```text
 info-escolas/
-├── data/                   # Gestão de arquivos
-│   ├── input/              # Arquivos de entrada
+├── data/ [🔒 Privado]      # Gestão de arquivos (Não versionado)
+│   ├── input/              # Arquivos de entrada (Snapshots e IDs)
 │   │   ├── ref/            # Planilhas base e snapshots técnicos
 │   │   └── codigos.txt     # IDs das escolas para processamento
-│   └── output/             # Resultados gerados (Excel)
-├── logs/                   # Histórico de execução para auditoria
-├── scripts/                # Facilitadores (run.bat)
+│   └── output/             # Resultados gerados em Excel
+├── logs/ [🔒 Privado]      # Histórico de execução para auditoria
+├── samples/                # Amostras públicas (Dados fictícios)
+│   └── exemplo_resultado.xlsx
+├── scripts/                # Facilitadores de execução (run.bat)
 ├── src/                    # O Coração (Código-fonte)
 │   ├── __init__.py
 │   ├── core.py             # Lógica principal (Regex e extração)
 │   ├── main.py             # Ponto de entrada (Orquestrador)
 │   └── utils.py            # Ferramentas de apoio (Logs, formatadores)
 ├── tests/                  # Testes unitários
-├── .env                    # Credenciais (Arquivo privado)
-├── .gitignore              # Proteção de arquivos sensíveis
-├── README.md               # Documentação
-└── requirements.txt        # Lista de dependências
+├── .env [🔒 Privado]       # Configurações de acesso e URLs
+├── .env.example            # Modelo para configuração do ambiente
+├── .gitignore              # Regras de proteção de arquivos
+├── README.md               # Documentação do projeto
+└── requirements.txt        # Lista de dependências (Bibliotecas)
 ```
 
 ## Como Usar
