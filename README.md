@@ -50,6 +50,18 @@ info-escolas/
     - No Windows: Use o arquivo `scripts/run.bat`
     - No terminal: `python -m src.main`
 
+## Amostra de Resultado (Output)
+
+Abaixo, um exemplo de como os dados são extraídos e organizados na planilha final:
+
+| fixo | celular | celular_diretor | nome_do_administrador_legal | email | codigo_escola | erro |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| (11) 4002-8922 | 98877-6655 | 98877-6655 | João da Silva | contato@escola-exemplo.com.br | 12345 | |
+| (21) 3344-5566 | 91122-3344 | 95566-7788 | Maria Oliveira | secretaria@colegio-modelo.edu.br | 67890 | |
+| | 99988-7766 | 99988-7766 | Carlos Souza | direcao@instituto-exemplo.org | 11223 | timeout |
+
+> Você pode baixar o arquivo completo de exemplo em: [`samples/exemplo_resultado.xlsx`](samples/exemplo_resultado.xlsx)
+
 ## Requisitos
 
 - Python 3.8+
