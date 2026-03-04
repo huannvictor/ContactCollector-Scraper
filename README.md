@@ -1,4 +1,4 @@
-# Info Escolas — Coletor Luz do Saber
+# ContactCollector-Scraper — Coletor Luz do Saber
 
 Este projeto automatiza a extração de dados de contato das escolas na plataforma **Luz do Saber**.
 
@@ -40,7 +40,7 @@ Embora eu não seja um especialista profundo em todas as sintaxes de cada biblio
 ## 🏗️ Estrutura do Projeto (The Blueprint)
 
 ```text
-info-escolas/
+ContactCollector-Scraper/
 ├── data/ [🔒 Privado]      # Gestão de arquivos (Não versionado)
 │   ├── input/              # Arquivos de entrada (Snapshots e IDs)
 │   │   ├── ref/            # Planilhas base e snapshots técnicos
